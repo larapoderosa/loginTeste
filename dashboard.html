@@ -45,19 +45,85 @@
             background-color: #2575fc;
             color: #fff;
         }
+
+        .menu {
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu h2 {
+            margin-top: 0;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu li ul {
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="dashboard-container">
         <h1>Bem-vindo ao Dashboard</h1>
         <p>Você está logado como <strong>admin</strong>.</p>
+        <div class="menu">
+            <h2>Menu da Farmácia</h2>
+            <ul>
+                <li>Medicamentos
+                    <ul>
+                        <li>Analgésicos</li>
+                        <li>Antibióticos</li>
+                        <li>Anti-inflamatórios</li>
+                        <li>Antialérgicos</li>
+                    </ul>
+                </li>
+                <li>Cuidados Pessoais
+                    <ul>
+                        <li>Higiene Bucal</li>
+                        <li>Cuidados com a Pele</li>
+                        <li>Cuidados com o Cabelo</li>
+                        <li>Desodorantes</li>
+                    </ul>
+                </li>
+                <li>Suplementos
+                    <ul>
+                        <li>Vitaminas</li>
+                        <li>Minerais</li>
+                        <li>Proteínas</li>
+                        <li>Energéticos</li>
+                    </ul>
+                </li>
+                <li>Equipamentos Médicos
+                    <ul>
+                        <li>Termômetros</li>
+                        <li>Medidores de Pressão</li>
+                        <li>Glicômetros</li>
+                        <li>Máscaras</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <button class="btn-logout" onclick="logout()">Logout</button>
     </div>
 
     <script>
         function logout() {
             alert('Você foi desconectado.');
-            window.location.href = 'login.html'; // Redirecionar para a página de login
+            window.location.href = 'index.html'; // Redirecionar para a página de login
         }
     </script>
 </body>
